@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Manrope', sans-serif;
+    padding: 0px;
+    margin:0px;
+}
+
+body{
+    background:  #1B202D;
+}
+
+.Header{
+    background: #B0DAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.CenterLogo{
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin:25px;
+    line-height: 0;
+}
+
+.CenterLogo h1 {
+    margin: 0;
+}
+
+.filmbookLogo{
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+.HomeImage {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+  overflow: hidden;    
+}
+
+.box1 {
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.box1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box2{
+    background-color:#2C5273;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-left: -400px;
+    max-width: 100%;
+    
+    
+}
+
+.box2 p{
+    font-size: 60px;
+    color: white;
+    
+    padding: 60px;
+    line-height: 1.4;
+}
+
+
+
+.Homepage h2{
+    padding-top: 90px;
+    padding-left: 60px;
+    font-size: 60px;
+    color:#B0DAFF;
+}
