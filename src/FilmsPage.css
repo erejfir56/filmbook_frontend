@@ -3,17 +3,6 @@
   color: white;
 }
 
-.filmsTable {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-.filmsTable th, .filmsTable td {
-  padding: 10px;
-  text-align: left;
-}
-
 .filmsTable thead {
   background-color: #152a3c;
 }
@@ -32,6 +21,7 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 }
 
 .pagination button {
@@ -44,6 +34,76 @@
 
 .pagination button:disabled {
   background-color: grey;
+}
+
+.filmRowClicked {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.filmRowClicked:hover {
+  background-color: #0e253b;
+}
+
+
+.modalOutside {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent h2{
+  font-size: 40px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin:0px;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.modalContent p{
+  font-size: 20px;
+  padding-bottom: 10px;
+  
+}
+
+.modalContent button{
+  font-size: 15px;
+  margin-left:490px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.modalContent {
+  background: #2C5273;
+  padding: 30px;
+  max-width: 500px;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 90%;
+  color: white;
+  text-align: left;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+}
+
+.actorsList {
+  gap: 8px;
+}
+
+.actorsList li {
+  font-size: 18px;
+  padding: 4px 0;
 }
 
 /* Alligning the table so everytime it goes to a new page it is fixed and not moving */
