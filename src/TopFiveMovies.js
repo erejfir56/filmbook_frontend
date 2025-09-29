@@ -29,7 +29,7 @@ function TopFiveMovies() {
 
   // returns the Top Five Movies and their rental count
   return (
-    <div>
+    <div className= "Movies">
       <h1>Top Five Movies</h1>
 
       <div className="moviesContainer">

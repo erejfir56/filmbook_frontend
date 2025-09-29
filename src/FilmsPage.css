@@ -1,0 +1,64 @@
+.filmsPage {
+  padding: 20px;
+  color: white;
+}
+
+.filmsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.filmsTable th, .filmsTable td {
+  padding: 10px;
+  text-align: left;
+}
+
+.filmsTable thead {
+  background-color: #152a3c;
+}
+
+.filmsTable tbody tr:nth-child(even) {
+  background-color: #1D3A53;
+}
+
+.filmsTable tbody tr:nth-child(odd) {
+  background-color: #2c5273;
+}
+
+
+.pagination {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  border: none;
+  cursor: pointer;
+  padding: 12px 15px;
+  background-color: #2c5273;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: grey;
+}
+
+/* Alligning the table so everytime it goes to a new page it is fixed and not moving */
+.filmsTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Table header and info are alligned so we make 33% each */
+.filmsTable th, 
+.filmsTable td {
+  width: 33%;
+  padding: 15px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+}

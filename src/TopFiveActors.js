@@ -38,7 +38,7 @@ function TopFiveActors() {
 
   // returns the Top Five Actors first + last name, their movie count
   return (
-    <div>
+    <div className="Actors">
       <h1>Top Five Actors</h1>
 
       <div className="actorsContainer">
