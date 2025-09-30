@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import TopFiveMovies from "./TopFiveMovies";
 import TopFiveActors from "./TopFiveActors";
 import FilmsPage from "./FilmsPage";
+import CustomersPage from "./CustomersPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <nav>
             <Link to="/">Home</Link>
             <Link to="/films">Films</Link>
+            <Link to="/customers">Customers</Link>
           </nav>
         </header>
 
@@ -36,9 +38,11 @@ function App() {
               <h2>Featured</h2>
               <TopFiveMovies />
               <TopFiveActors />
+              <></>
             </>
           } />
           <Route path="/films" element={<FilmsPage />} />
+          <Route path="/customers" element={<CustomersPage />} />
         </Routes>
       </div>
     </Router>

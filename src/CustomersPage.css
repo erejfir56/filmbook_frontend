@@ -1,0 +1,194 @@
+.customersPage {
+  padding: 20px;
+  color: white;
+}
+
+.customersTable thead {
+  background-color: #152a3c;
+}
+
+.customersTable tbody tr:nth-child(even) {
+  background-color: #1D3A53;
+}
+
+.customersTable tbody tr:nth-child(odd) {
+  background-color: #2c5273;
+}
+
+.addButton button {
+  font-size: 20px;
+  background-color: #2C5273;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 15px;
+}
+
+
+
+
+.pagination {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pagination button {
+  border: none;
+  cursor: pointer;
+  padding: 12px 15px;
+  background-color: #2c5273;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: grey;
+}
+
+.filmRowClicked {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.filmRowClicked:hover {
+  background-color: #0e253b;
+}
+
+
+.modalOutside {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent input{
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.modalButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modalContent form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.xDelete button{
+  font-size: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.modalContent h2{
+  font-size: 40px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin:0px;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.modalContent p{
+  font-size: 20px;
+  padding-bottom: 10px;
+  
+}
+
+.modalContent button{
+  font-size: 15px;
+  margin-left:490px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.modalContent {
+  background: #2C5273;
+  padding: 30px;
+  max-width: 500px;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 90%;
+  color: white;
+  text-align: left;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+}
+
+.actorsList {
+  gap: 8px;
+}
+
+.actorsList li {
+  font-size: 18px;
+  padding: 4px 0;
+}
+
+/* Alligning the table so everytime it goes to a new page it is fixed and not moving */
+.customersTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Table header and info are alligned so we make 33% each */
+.customersTable th, 
+.customersTable td {
+  width: 33%;
+  padding: 15px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.customersTable th:nth-child(1),
+.customersTable td:nth-child(1){
+  width: 5%;
+}
+
+.customersTable th:nth-child(2),
+.customersTable td:nth-child(2),
+.customersTable th:nth-child(3),
+.customersTable td:nth-child(3),
+.customersTable th:nth-child(7),
+.customersTable td:nth-child(7),
+.customersTable th:nth-child(10),
+.customersTable td:nth-child(10) {
+  width: 12%;
+}
+
+.customersTable th:nth-child(4),
+.customersTable td:nth-child(4),
+.customersTable th:nth-child(5),
+.customersTable td:nth-child(5){
+  width: 20%;
+}

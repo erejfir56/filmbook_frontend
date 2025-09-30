@@ -65,17 +65,14 @@ function TopFiveActors() {
 
             <h2>{actorInfo.actor.first_name} {actorInfo.actor.last_name}</h2>
             <p><b>Actor ID:</b> {actorInfo.actor.actor_id}</p>
-            <p><b>Rentals:</b> {selectedActor.rentals}</p>
+            
 
             {/* Modal will also display top 5 films the actor is in and the movies rental count. */}
             <h3>Top 5 Films:</h3>
             <ol className="filmsList">
               {actorInfo.top_films.map((film, i) => (
                 <li key={i}>
-                  <b><span className="filmTitle">{film.title}</span></b>
-                  <ul className="rentals"> 
-                    <li>{film.rentals} rentals</li>
-                  </ul>
+                  {film.title} - Rentals: {film.rentals}
                 </li>
               ))}
             </ol>
