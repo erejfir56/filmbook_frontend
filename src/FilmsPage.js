@@ -9,17 +9,18 @@ function FilmsPage() {
   const [selectedFilm, setSelectedFilm] = useState(null);
   const [filmInfo, setFilmInfo] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [searchedWord, setSearchedWord] = useState("");
   const filmsOnPage = 20;
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:5000/filmsTable?page=${curPage}`)
+    fetch(`http://127.0.0.1:5000/filmsTable?search=${searchedWord}&page=${curPage}`)
       .then((res) => res.json())
       .then((data) => {
         setFilms(data.films);
         setTotal(data.total);
       })
       .catch((err) => console.error(err));
-  }, [curPage]);
+  }, [curPage, searchedWord]);
 
   const maxPage = Math.ceil(total / filmsOnPage);
 
@@ -42,6 +43,12 @@ function FilmsPage() {
   return (
     <div className="filmsPage">
       <h1>All Films</h1>
+      <div className="searchContainer">
+        <input type="text" placeholder="Search films" className="searchInput"
+        value = {searchedWord} 
+        onChange={(event) => setSearchedWord(event.target.value)}
+        />
+      </div>
       <table className="filmsTable">
         <thead>
           <tr>
